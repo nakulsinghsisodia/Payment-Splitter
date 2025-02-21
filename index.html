@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Fund Distributor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Splitter</h1>
+
+        <div class="connect-section">
+            <button onclick="connectMetaMask()">Connect Wallet</button>
+            <p id="wallet-address">Not connected</p>
+        </div>
+
+        <div class="distribute-section">
+            <input type="number" id="amount" placeholder="Amount to Distribute (ETH)">
+            <button onclick="distributeFunds()">Distribute Funds</button>
+        </div>
+
+        <!-- Withdraw Section -->
+        <div class="withdraw-section">
+            <input type="number" id="withdrawAmount" placeholder="Amount to Withdraw (ETH)">
+            <button class="withdraw-btn" onclick="withdrawFunds()">Withdraw Funds</button>
+        </div>
+
+        <p id="status"></p>
+
+        <ul id="transaction-history"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

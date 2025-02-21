@@ -1,0 +1,169 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Container Styling */
+.container {
+    background-color: #F6F5FF;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 500px;
+    animation: slideInFromLeft 1.5s ease-out;
+    z-index: 10;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #6C2BD9;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Button Styling */
+button, .withdraw-btn {
+    background-color: #1d65be;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+button:hover, .withdraw-btn:hover {
+    background-color: #1e6bc8;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styling */
+.connect-section, .distribute-section, .withdraw-section {
+    margin-bottom: 20px;
+    animation: slideInFromBottom 1.5s ease-out;
+}
+
+/* Wallet Address Styling */
+#wallet-address {
+    font-size: 16px;
+    color: #482c72;
+    text-align: center;
+    animation: fadeInUp 2s ease-out forwards;
+    opacity: 0;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Status Message */
+#status {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+#status.success {
+    color: #4CAF50;
+}
+
+#status.fail {
+    color: #f44336;
+}
+
+/* Recipient List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button {
+        padding: 12px 20px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
