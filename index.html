@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Payment Splitter</h1>
+        <h1>Payment Spilitter</h1>
 
         <div class="connect-section">
             <button onclick="connectMetaMask()">Connect Wallet</button>
@@ -29,6 +29,15 @@
         <p id="status"></p>
 
         <ul id="transaction-history"></ul>
+    </div>
+
+    <div class="bubbles">
+        <!-- Bubble Animation -->
+        <div class="bubble bubble-size" style="--x: 100px; --y: 200px; --i: 1;"></div>
+        <div class="bubble bubble-size-small" style="--x: -150px; --y: 100px; --i: 2;"></div>
+        <div class="bubble bubble-size" style="--x: 250px; --y: -50px; --i: 3;"></div>
+        <div class="bubble bubble-size-small" style="--x: 50px; --y: -250px; --i: 4;"></div>
+        <div class="bubble bubble-size" style="--x: -100px; --y: 150px; --i: 5;"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
