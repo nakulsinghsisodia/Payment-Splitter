@@ -17,7 +17,3 @@ Payment Splitter is a Solidity smart contract that allows seamless distribution 
 
 ## License  
 This project is released under the **MIT License**.  
-
----
-  
-Feel free to modify this as needed! Do you want me to add any usage examples or deployment instructions? 🚀  
